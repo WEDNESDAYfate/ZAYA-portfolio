@@ -21,7 +21,7 @@ const SocialMedia = () => {
             </div>
 
             <div>
-                <a href='https://drive.google.com/file/d/1mLAtrAgqlCoaPbwubesSF6vi8x3GDIUm/view' ><IoIosDocument /></a>
+                <a href='https://drive.google.com/file/d/1leD22Qk_thHkxnjXuTTwCNPlnHgVSwSZ/view?usp=sharing' ><IoIosDocument /></a>
 
             </div>
 

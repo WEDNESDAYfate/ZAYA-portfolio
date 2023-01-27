@@ -12,7 +12,7 @@ const Skills = () => {
 
 
     const handleClick = () => {
-        window.location.href = 'https://drive.google.com/file/d/1mLAtrAgqlCoaPbwubesSF6vi8x3GDIUm/view';
+        window.location.href = 'https://drive.google.com/file/d/1leD22Qk_thHkxnjXuTTwCNPlnHgVSwSZ/view?usp=sharing';
     };
 
     useEffect(() => {
