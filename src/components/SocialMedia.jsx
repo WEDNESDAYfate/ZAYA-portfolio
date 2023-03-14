@@ -3,9 +3,9 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { IoIosDocument } from 'react-icons/io'
 
 const SocialMedia = () => {
-    // // const resumeButton = ;
+    const resumeButton = process.env.REACT_APP_FILE_URL;
 
-    // const resumeButton = () => {
+    //const resumeButton = () => {
     //     // window.location.href = process.env.REACT_APP__DOWNLOAD_RESUME;
     //     window.location.href = process.env.REACT_APP_FILE_URL;
     // };
@@ -21,7 +21,7 @@ const SocialMedia = () => {
             </div>
 
             <div>
-                <a href="https://drive.google.com/file/d/1Ah-b10tDhWxB7vfo3jf-o4ZlGJ-e5JL4/view?usp=sharing" ><IoIosDocument /></a>
+                <a href={resumeButton} target='_blank' ><IoIosDocument /></a>
 
             </div>
 

@@ -9,10 +9,11 @@ import './Skills.scss';
 const Skills = () => {
     const [experiences, setExperiences] = useState([]);
     const [skills, setSkills] = useState([]);
-
+    const resumeButton = process.env.REACT_APP_FILE_URL;
 
     const handleClick = () => {
-        window.location.href = 'https://drive.google.com/file/d/1Ah-b10tDhWxB7vfo3jf-o4ZlGJ-e5JL4/view?usp=sharing';
+        window.open(resumeButton, '_blank');
+
     };
 
     useEffect(() => {
