@@ -21,6 +21,7 @@ const Work = () => {
             setFilterWork(data);
         });
     }, []);
+    // console.log("data= " + query);
 
     const handleWorkFilter = (item) => {
         setActiveFilter(item);

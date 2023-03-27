@@ -9,17 +9,23 @@ import './Skills.scss';
 const Skills = () => {
     const [experiences, setExperiences] = useState([]);
     const [skills, setSkills] = useState([]);
-    const resumeButton = process.env.REACT_APP_FILE_URL;
+    const [resume, setResume] = useState([]);
+    //const resumeButton = process.env.REACT_APP_FILE_URL;
+
+
+    // resume.map((item) => {
+    //     console.log(item.resume);
+    // })
+
 
     const handleClick = () => {
-        window.open(resumeButton, '_blank');
-
+        window.open(resume[0].resume, '_blank');
     };
 
     useEffect(() => {
         const query = '*[_type == "experiences"]';
         const skillsQuery = '*[_type == "skills"]';
-
+        const resumeQuery = '*[_type == "resume"]';
 
 
 
@@ -29,6 +35,10 @@ const Skills = () => {
 
         client.fetch(skillsQuery).then((data) => {
             setSkills(data);
+        });
+
+        client.fetch(resumeQuery).then((data) => {
+            setResume(data);
         });
     }, []);
 

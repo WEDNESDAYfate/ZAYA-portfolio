@@ -1,14 +1,18 @@
-import React from 'react'
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import { IoIosDocument } from 'react-icons/io'
+import React, { useState, useEffect } from 'react';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { IoIosDocument } from 'react-icons/io';
+import { client } from '../client';
 
 const SocialMedia = () => {
-    const resumeButton = process.env.REACT_APP_FILE_URL;
+    const [resume, setResume] = useState([]);
 
-    //const resumeButton = () => {
-    //     // window.location.href = process.env.REACT_APP__DOWNLOAD_RESUME;
-    //     window.location.href = process.env.REACT_APP_FILE_URL;
-    // };
+    useEffect(() => {
+        const resumeQuery = '*[_type == "resume"]';
+
+        client.fetch(resumeQuery).then((data) => {
+            setResume(data);
+        });
+    }, []);
 
     return (
         <div className='app__social'>
@@ -21,8 +25,7 @@ const SocialMedia = () => {
             </div>
 
             <div>
-                <a href={resumeButton} target='_blank' ><IoIosDocument /></a>
-
+                <a href={resume.length > 0 ? resume[0].resume : ""} target='_blank' rel="noopener noreferrer"><IoIosDocument /></a>
             </div>
 
         </div >
