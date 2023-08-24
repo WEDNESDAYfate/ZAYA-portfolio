@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86a24e7a88bada7825ce67f02ba890119e8beba6
 
 🎓 Bachelor of Industrial Automation Engineer
 Mongolian University of Science and Technology
@@ -22,3 +25,8 @@ Responsible to design the browser compatible web applications using HTML, CSS, J
 
 
 Developed and maintained high-quality single web applications using HTML5, CSS3/SASS, and JavaScript (React, Redux). Worked with cross-functional teams to design, develop, and maintain web applications. Migrated a Multi-page user experience into a single page app, improving customer engagement by 10%. Designed and developed RESTful APIs using Node.js and maintained databases using MySQL and MongoDB. Created responsive designs using Bootstrap, Tailwind and other frameworks. Build and executed UI/UX designs for a customer’s interface, utilizing technologies such as Figma, Adobe XD to deliver a seamless and user-friendly experience. Ensured code quality and maintainability by writing clean, maintainable code and performing code reviews. Conducted troubleshooting and debugging activities on web applications, and executed unit test to guarantee optimum application functionality.     (APR 2019 – NOV 2022)  
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> 86a24e7a88bada7825ce67f02ba890119e8beba6
