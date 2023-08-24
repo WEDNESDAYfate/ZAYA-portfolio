@@ -10,14 +10,7 @@ const Skills = () => {
     const [experiences, setExperiences] = useState([]);
     const [skills, setSkills] = useState([]);
     const [resume, setResume] = useState([]);
-    //const resumeButton = process.env.REACT_APP_FILE_URL;
-
-
-    // resume.map((item) => {
-    //     console.log(item.resume);
-    // })
-
-
+    
     const handleClick = () => {
         window.open(resume[0].resume, '_blank');
     };
@@ -41,6 +34,9 @@ const Skills = () => {
             setResume(data);
         });
     }, []);
+
+     //data.sort((a, b) => a.year.localeCompare(b.year));
+     const sortedExperiences = experiences.sort((a, b) => b.year.localeCompare(a.year));
 
     return (
         <>
@@ -68,7 +64,7 @@ const Skills = () => {
                 </motion.div>
 
                 <div className="app__skills-exp">
-                    {experiences.map((experience) => (
+                    {sortedExperiences.map((experience) => (
 
                         <motion.div
                             className="app__skills-exp-item"
